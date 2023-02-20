@@ -9,4 +9,10 @@ class Cable2( tip: String, colichestvoJilCable: Int, diametres: Double, val ople
        }
         return
     }
+    override fun printDetails() {
+        println("$tip - $colichestvoJilCable - кол - во жил кабеля, $diametres - диаметр кабеля в сантиметрах")
+    }
+    override fun calculateQ(): Double {
+        return diametres / colichestvoJilCable
+    }
 }

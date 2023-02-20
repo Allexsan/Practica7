@@ -8,4 +8,10 @@ class Diamond2(name: String,weight: Double,cutQuality: Int, val colors: String):
         }
         return q
     }
+    override fun calculateQ(): Double{
+        return 0.4 * weight + 0.6 * cutQuality
+    }
+    override fun printDetails(){
+        println("$name - $weight - карат, $cutQuality - качество огранки")
+    }
 }

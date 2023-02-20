@@ -1,8 +1,8 @@
  open class Diamond(val name: String, val weight: Double, val cutQuality: Int) {
-    fun calculateQ(): Double{
+   open fun calculateQ(): Double{
         return 0.4 * weight + 0.6 * cutQuality
     }
-    fun printDetails(){
+   open fun printDetails(){
         println("$name - $weight - карат, $cutQuality - качество огранки")
     }
-}
+ }
